@@ -1,0 +1,69 @@
+/* This is CSS used to style everything */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+body {background: #f9f9f9;}
+#info {
+  box-shadow: 5px 2px 5px 2px rgba(0, 0, 0, 0.6);
+  background: #ffffff;
+  padding: 1ch;
+  margin-bottom: 3ch;
+}
+#info #title{font-size: 2.5em;}
+#info p{font-size: 1.4em;}
+#info p span {color: #ff1e1e; font-weight: 600;}
+button {
+  background: linear-gradient(to right, #ff0037f1, #00fff2be);
+  color: #000000;
+  padding: 1ch;
+  font-size: 1.5em;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+  box-shadow: 5px 2px 5px 2px rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+  background: #353535;
+  color: #fff;
+  padding: 2ch;
+}
+footer h2 {font-size: 1.4em;}
+footer p{font-size: 1.2em;}
+
+/* Media Queries are placed to make the page responsive or to igniate Responsiveness */
+/* Responsiveness means that when we switch to a different screen size such as a mobile */
+/* phone, this function tells the browser how to load everything and which properties should be changed */
+
+@media screen and (min-width: 2560px){
+  #info{padding: 2ch;}
+  #info #title{font-size: 5em;}
+  #info p{font-size: 3em;}
+  footer{padding: 5ch;}
+  footer h2{font-size: 3.5em; }
+  footer p{font-size: 2.5em;}
+  #result{font-size: 3.5em; }
+  button{font-size: 3em;}
+}
+@media screen and (min-width: 1024px) {
+  footer{padding: 2ch;}
+}
+@media screen and (max-width: 991px){
+  #info{padding: 0.3ch;}
+  #info #title{font-size: 2em;}
+  #info p, span{font-size: 1.2em;}
+  footer{padding: 0.4ch;}
+  footer p{font-size: 1.1em;}
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Toss Game</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./styling.css">
+</head>
+
+<body>
+    <header>
+        <!-- this is the info section -->
+        <section id="info">
+            <h1 id="title">Toss A Coin Game</h1> 
+            <p>Press the button below to <span>TOSS</span> the Coin</p>
+        </section>
+        <main id="game">
+            <!-- this is the audio which is being played in the background when the button is clicked -->
+            <audio src="./audio.mp3" id="audio"></audio>
+
+            <!-- this shows the result as heads or tails -->
+            <h1 id="result"></h1>
+
+            <!-- this is the button which toggles the coin toss function -->
+            <button onclick="toss()">Toss The Coin</button>
+        </main>
+    </header>
+
+    <footer>
+        <!-- this is a short Disclaimer, you can ignore if you want -->
+        <h2>Disclaimer!</h2>
+        <p>
+            Created by Agamdeep Singh, on 13th September 2021, using HTML, CSS And JavaScript.
+            You are open to make any changes to the project, keeping in mind that, you provide me with the right 
+            credits, so as to respect and value my time and effort added into it 😉.
+        </p>
+    </footer>
+</body>
+</html>
